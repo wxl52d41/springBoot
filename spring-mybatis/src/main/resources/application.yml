@@ -1,0 +1,17 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://139.9.141.175:3306/springboot?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: wxlalt
+
+# mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml # mapper映射文件路径
+  type-aliases-package: com.test.mybatis.pojo
+
+  # config-location:  # 指定mybatis的核心配置文件
